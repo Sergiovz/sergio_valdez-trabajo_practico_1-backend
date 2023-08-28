@@ -9,3 +9,8 @@
         dialect: process.env.DB_DIALECT
     }
 );
+
+module.exports = {
+    sequelize,
+    DataTypes
+}
