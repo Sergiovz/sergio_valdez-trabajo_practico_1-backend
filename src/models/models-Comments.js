@@ -20,17 +20,17 @@ const comment = sequelize.define('Comentarios', {
         defaultValue: true
     },
     createdAt: {
-        type: DataTypes.DATE(6),
+        type: DataTypes.DATE,
         allowNull: false,
-        defaultValue: sequelize.literal('CURRENT_TIMESTAMP')        
+    //    defaultValue: sequelize.literal('CURRENT_TIMESTAMP')        
     },
     updatedAt: {
-        type: DataTypes.DATE(6),
+        type: DataTypes.DATE,
         allowNull: false,
-        defaultValue: sequelize.literal('CURRENT_TIMESTAMP')
+    //    defaultValue: sequelize.literal('CURRENT_TIMESTAMP')
     },
     deletedAt: {
-        type: DataTypes.DATE(6),
+        type: DataTypes.DATE,
         allowNull: true
     }
 },{
